@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Your Free Fundraising Forecast | Legacy Fundraising</title>
+<meta name="description" content="Tell us about your program and get a complimentary 14-day fundraising forecast: estimated net profit, participant targets and a recommended campaign approach.">
+<meta property="og:title" content="Get Your Free Fundraising Forecast | Legacy Fundraising">
+<meta property="og:description" content="What could your program fund in 14 days?">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" aria-label="Legacy Fundraising home">
+      <img src="assets/logo-horizontal.png" alt="Legacy Fundraising" class="logo-img dark-logo">
+      <img src="assets/logo-horizontal.png" alt="Legacy Fundraising" class="logo-img light-logo">
+    </a>
+    <div class="site-nav">
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" data-nav-menu>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="why-legacy.html">Why Legacy</a></li>
+        <li><a href="gold-cards.html">Gold Cards</a></li>
+        <li><a href="for-programs.html">For Programs</a></li>
+        <li><a href="for-businesses.html">For Businesses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="forecast.html" class="btn btn--primary btn--sm">Get your forecast</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container stack">
+    <div class="eyebrow">Get your forecast</div>
+    <h1>What could your program fund in 14 days?</h1>
+    <p class="lede">Tell us about your program. We will prepare a complimentary fundraising forecast showing your estimated net program-profit range, participant targets and recommended campaign approach.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:56px;">
+  <div class="container">
+    <form
+      class="stack"
+      style="gap:32px;max-width:920px;"
+      data-forecast-form
+      action="https://formspree.io/f/mgavbraw"
+      method="POST"
+    >
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="role">Role</label>
+          <input type="text" id="role" name="role" placeholder="Coach, AD, booster club leader…" autocomplete="organization-title">
+        </div>
+        <div class="field">
+          <label for="org">School or organization <span class="req">*</span></label>
+          <input type="text" id="org" name="school_or_organization" autocomplete="organization" required>
+        </div>
+        <div class="field">
+          <label for="program">Program or team</label>
+          <input type="text" id="program" name="program_or_team">
+        </div>
+        <div class="field">
+          <label for="city-state">City and state</label>
+          <input type="text" id="city-state" name="city_state" autocomplete="address-level2">
+        </div>
+        <div class="field">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone <span class="req">*</span></label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+        </div>
+        <div class="field">
+          <label for="participants">Number of participants <span class="req">*</span></label>
+          <input type="number" id="participants" name="number_of_participants" min="1" required>
+        </div>
+        <div class="field">
+          <label for="goal">Fundraising goal</label>
+          <input type="text" id="goal" name="fundraising_goal" placeholder="e.g. $15,000">
+        </div>
+        <div class="field">
+          <label for="timing">Desired campaign timing</label>
+          <input type="text" id="timing" name="desired_timing" placeholder="e.g. Late August">
+        </div>
+        <div class="field full">
+          <label for="what-to-fund">What do you want to fund?</label>
+          <input type="text" id="what-to-fund" name="what_to_fund" placeholder="Equipment, travel, uniforms, camps…">
+        </div>
+        <div class="field full">
+          <label for="notes">Additional information</label>
+          <textarea id="notes" name="additional_information"></textarea>
+        </div>
+      </div>
+
+      <div class="stack" style="gap:16px;">
+        <button type="submit" class="btn btn--primary" style="align-self:flex-start;">Build my free forecast</button>
+        <p class="form-note">Fields marked <span class="req">*</span> are required.</p>
+        <div class="form-status" data-form-status></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <a href="index.html"><img src="assets/logo-horizontal.png" alt="Legacy Fundraising" style="height:28px;"></a>
+  <div class="footer-links">
+    <a href="faq.html">FAQ</a>
+    <a href="mailto:contact@legacyfundraising.org">contact@legacyfundraising.org</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
