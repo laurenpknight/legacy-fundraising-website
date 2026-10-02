@@ -2,6 +2,8 @@
 
 Static HTML/CSS/JS marketing site. No build step — open the files directly or serve the folder with any static host.
 
+_Deployed via GitHub → Netlify auto-deploy as of 2026-10-02._
+
 ## Preview locally
 
 ```bash
