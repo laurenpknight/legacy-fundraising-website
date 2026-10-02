@@ -266,6 +266,16 @@ h3, .h3{ font-size:clamp(1.5rem, 1.3rem + 0.9vw, 1.875rem); line-height:1.1; }
 .phase li::before{ content:"—"; position:absolute; left:0; color:var(--red); }
 @media (max-width:640px){ .phase{ grid-template-columns:1fr; gap:12px; } }
 
+/* Icons */
+.icon{
+  width:28px; height:28px; flex:none; display:block;
+  color:var(--red);
+}
+.icon--lg{ width:34px; height:34px; }
+.flywheel-num .icon{ width:20px; height:20px; color:#fff; stroke-width:2.25; }
+.split-item .icon{ margin-bottom:14px; }
+.phase-icon-col{ display:flex; flex-direction:column; gap:14px; align-items:flex-start; }
+
 /* Cards */
 .card{
   background:var(--card); border-radius:var(--radius);
@@ -278,6 +288,7 @@ h3, .h3{ font-size:clamp(1.5rem, 1.3rem + 0.9vw, 1.875rem); line-height:1.1; }
 .card--gold{ background:var(--gold); color:var(--gold-ink); }
 .card--gold .card-body{ color:#3a352e; }
 .card--gold .card-link{ color:var(--ink); }
+.card--gold .icon{ color:var(--ink); }
 
 .card-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
 @media (max-width:900px){ .card-grid{ grid-template-columns:1fr 1fr; } }
